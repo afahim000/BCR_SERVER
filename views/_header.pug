@@ -1,0 +1,23 @@
+header.header
+  nav.nav.nav--tours
+    a.nav__el(href='/Monk_Parakeet') Monk Parakeet
+    a.nav__el(href='/Fiddle_Crabs') Fiddle Crabs
+    a.nav__el(href='/Projects') Past/Current Projects 
+    a.nav__el(href='/Involved') Get Involve Now
+
+  .header__logo
+    a(href='/')
+      img.nav__el(,src='/img/logo-white.png' alt='BCR LAB logo')
+  nav.nav.nav--user
+    a.nav__el(href='/login') Log in
+    a.nav__el.nav__el--cta(href='#') Sign up
+  //- nav.nav.nav--user
+  //-   if user
+  //-     a.nav__el.nav__el--logout Log out
+  //-     a.nav__el(href='/me')
+  //-       img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
+  //-       span= user.name.split(' ')[0]
+  //-   else
+  //-     a.nav__el(href='/login') Log in
+  //-     a.nav__el.nav__el--cta(href='#') Sign up
+      
