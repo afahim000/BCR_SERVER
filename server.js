@@ -13,10 +13,17 @@ const app = require('./app');
 //Connect to the MongoDB database
 
 //Address to our database from the config.env file
+
+/*
 const DB = process.env.DATABASE.replace(
   '<PASSWORD>',
   process.env.DATABASE_PASSWORD
 );
+*/
+
+mongoose.set('strictQuery', false);
+const DB = "mongodb+srv://abrarfahim100:Sakib43st@afahim000.jquadwy.mongodb.net/local_library?retryWrites=true&w=majority";
+
 //connect to the database with mongoose
 mongoose.connect(DB).then(() => {
   if (process.env.NODE_ENV === 'development')
